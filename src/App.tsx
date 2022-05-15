@@ -7,6 +7,7 @@ import {User} from "./interfaces";
 import {getCurrentUser} from "./auth/auth";
 import {BrowserRouter as Router, Route, Routes, Navigate, BrowserRouter} from "react-router-dom";
 import {Index as Event} from "./event/Index";
+import {Index as SchoolIndex} from "./common/tokan/school/Index";
 import {_404} from './errorpage/_404';
 
 // グローバルで扱う変数・関数
@@ -80,6 +81,7 @@ const App: React.FC = () => {
                             <Route path="events" element={<Private><Event/></Private>}/>
                             <Route path="members" element={<Private><Portal/></Private>}/>
                             <Route path="meetings" element={<Private><Portal/></Private>}/>
+                            <Route path="schools" element={<Private><SchoolIndex/></Private>}/>
                         </Route>
                         <Route path="*" element={<_404/>}/>
 
