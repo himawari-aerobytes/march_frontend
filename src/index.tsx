@@ -11,6 +11,11 @@ ReactDOM.render(
     <Container>
       <App />
     </Container>
+    <footer className='bg-light'>
+      <div className="sticky-top bg-light">
+        <p className="text-center text-muted">himawari-project all right reserved 2022</p>
+      </div>
+    </footer>
   </React.StrictMode>,
   document.getElementById('root')
 );
